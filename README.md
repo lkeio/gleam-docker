@@ -4,15 +4,18 @@ This repository includes Dockerfile and Docker Compose setups for Gleam environm
 
 ## Prerequisites
 
-Make sure Docker and Docker Compose are installed on your machine.
+Make sure `Docker` and `Docker Compose` are installed on your machine.
+
+- [docker](https://docs.docker.com/get-docker/)
+- [compose](https://docs.docker.com/compose/install/linux/)
 
 ## Getting Started
 
 Clone your project repository and navigate to the project directory:
 
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone git@github.com:lkeio/gleam-docker.git
+cd gleam-docker
 ```
 
 ## Usage Instructions

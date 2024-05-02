@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  erlang_gleam_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    networks:
+      - app_network
+    command: sh -c "while :; do sleep 1; done"  # Keeps the container running for debugging
+
+networks:
+  app_network:
+    driver: bridge
